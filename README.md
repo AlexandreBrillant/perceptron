@@ -11,8 +11,7 @@ too a max training size. It return an error rate. 1 (100%) means it can't train 
 
 After training the perceptron, you can use the **predict** method with a set of values. It will return the label for this values.
 
-In the following sample, we have two labels : green/red. green is for a negative value and red is for a positive one. We let the
-perceptron find the good weights while training for guessing it.
+In the following sample, we have two labels: green and red. Green represents a negative value, and red represents a positive one. We let the perceptron find the correct weights during training to predict them.
 
 ```javascript
 
