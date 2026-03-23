@@ -4,12 +4,15 @@ A Simple JavaScript Implementation of the Perceptron AI Algorithm
 
 ## Usage
 
-Add any sample using the **addTrainingSample**. A Sample is a set of values with a label. You can have only two labels.
+Add any sample using the **addTrainingSample**. A Sample is a set of values with a label. You can have only two labels. A label is a free string.
 
 Calling **train** will update the inner weights of the perceptron. You can specify
 too a max training size. It return an error rate. 1 (100%) means it can't train the samples and 0 (0%) means this is perfect.
 
-After training the percepton, you can use the **predict** method with a set of values. It will return the label for this values.
+After training the perceptron, you can use the **predict** method with a set of values. It will return the label for this values.
+
+In the following sample, we have two labels : green/red. green is for a negative value and red is for a positive one. We let the
+perceptron find the good weights while training for guessing it.
 
 ```javascript
 
