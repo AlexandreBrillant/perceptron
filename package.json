@@ -1,0 +1,33 @@
+{
+  "name": "perceptron",
+  "version": "1.0.0",
+  "description": "A Simple JavaScript Implementation of the Perceptron Algorithm",
+  "keywords": [
+    "perceptron",
+    "neural network",
+    "neurone",
+    "ia",
+    "ai"
+  ],
+  "homepage": "https://github.com/AlexandreBrillant/perceptron#readme",
+  "bugs": {
+    "url": "https://github.com/AlexandreBrillant/perceptron/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexandreBrillant/perceptron.git"
+  },
+  "license": "MIT",
+  "author": "Alexandre Brillant",
+  "type": "module",
+  "main": "perceptron.mjs",
+  "scripts": {
+    "test": "node test/test.js",
+    "predeploy" : "node --check src/perceptron.mjs",
+    "deploy" : "cp src/perceptron.mjs dist",
+    "postdeploy" : "npx terser dist/perceptron.mjs > dist/perceptron.min.mjs"
+  },
+  "devDependencies": {
+    "terser": "^5.46.1"
+  }
+}
