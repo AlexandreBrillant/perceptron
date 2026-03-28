@@ -42,6 +42,14 @@ export class Perceptron {
     #output = -1;
     #labels = [];
 
+    weight( index ) {
+        return this.#weights[ index ];
+    }
+
+    biais() {
+        return this.#biais;
+    }
+
     addTrainingSample( {sample, label} ) {
         if ( !Array.isArray( sample ) )
             throw "Invalid sample, must be an Array";

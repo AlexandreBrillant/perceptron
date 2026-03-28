@@ -23,11 +23,12 @@
   "main": "perceptron.mjs",
   "scripts": {
     "test": "node test/test.js",
-    "predeploy" : "node --check src/perceptron.mjs",
-    "deploy" : "cp src/perceptron.mjs dist",
-    "postdeploy" : "npx terser dist/perceptron.mjs > dist/perceptron.min.mjs"
+    "predeploy": "node --check src/perceptron.mjs",
+    "deploy": "cp src/perceptron.mjs dist",
+    "postdeploy": "npx terser dist/perceptron.mjs > dist/perceptron.min.mjs"
   },
   "devDependencies": {
+    "http-server": "^14.1.1",
     "terser": "^5.46.1"
   }
 }
